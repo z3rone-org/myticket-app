@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+canvas {
+    width: 100%;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: stretch;
+    overflow: hidden;
+    margin: 0 25px 25px;
+}
+#firstDay {
+    font-size: 16px;
+    color: #333;
+}
+#validRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#validFrom {
+    text-align: left;
+}
+#validTo {
+    text-align: right;
+}
+hr {
+    width: 100%;
+    border-width: 0.5px;
+    border-color: #fff;
+}
+#info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+#person #class {
+    display: flex;
+}
+#person {
+    text-align: left;
+}
+#class {
+    text-align: right;
+}
+.smallTitle {
+    font-size: 9pt;
+}
+#logo {
+    height: 25px;
+    margin-right: 15px;
+}
+#movingLogo {
+    width: 15%;
+    animation: moveLogo 6s linear infinite
+}
+/* Keyframes for moving the logo */
+@keyframes moveLogo {
+    0% {
+        left: 0;
+        transform: translateX(-250%);
+    }
+    50% {
+        left: 50%;
+        transform: translateX(250%);
+    }
+    100% {
+        left: 100%;
+        transform: translateX(-250%);
+    }
+}
